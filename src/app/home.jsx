@@ -1,4 +1,6 @@
 import "../styles/home/home.css"
+import "../styles/index.css"
+
 const  home = () =>{
     return (
         <div className="home">
@@ -7,4 +9,4 @@ const  home = () =>{
     )
 
 }
-export default home
+export default home;
