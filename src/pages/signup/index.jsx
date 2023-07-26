@@ -1,7 +1,6 @@
 import "../../styles/signUp/Sign.css"
 const Input =(props)=>{
 
-    
     return (
         <div className="componentInput">
             <label htmlFor={props.name}>{props.name}:</label>
