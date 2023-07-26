@@ -53,6 +53,7 @@ const CategoryBox: React.FC<CategoryBoxProps> = ({
         <div
             onClick={handleClick}
             className={`
+            
             flex 
             flex-col 
             items-center 

@@ -1,4 +1,5 @@
 import HeartButton from "./HeartButton";
+import { AiFillStar } from "react-icons/ai";
 
 const InfoCard = (props) => {
   return (
@@ -33,20 +34,23 @@ const InfoCard = (props) => {
             <HeartButton />
           </div>
         </div>
-        <div className="font-semibold text-lg">
-          {props.location}
+
+
+
+        <div className="font-semibold text-lg flex items-center justify-between gap-1">
+          <span className="truncate">{props.location}</span>
+          <div className="flex items-center gap-1">
+            <AiFillStar className="h-5 w-5 text-yellow-500" />
+            <span className="text-s">{props.rating}</span>
+          </div>
         </div>
 
         {/* <div className="font-light text-neutral-500">
           {reservationDate || data.category}
         </div> */}
-        <div className="font-light, text-l">
-          {props.name}
-        </div>
+        <div className="font-light text-l">{props.name}</div>
         <div className="flex flex-row items-center gap-1">
-          <div className="font-semibold">
-            {props.price}€
-          </div>
+          <div className="font-semibold">{props.price} €</div>
           <div className="font-light">par nuit</div>
         </div>
 
